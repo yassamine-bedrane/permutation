@@ -26,7 +26,7 @@ const Profil = ({ professor, logout }) => {
   }, []);
 
   const fetchOptions = () => {
-    fetch('https://troubled-red-garb.cyclic.app/professeurs')
+    fetch('https://tiny-worm-nightgown.cyclic.app/professeurs')
       .then((response) => response.json())
       .then((data) => {
         setSpecialiteOptions(extractUniqueSpecialites(data));
@@ -88,7 +88,7 @@ const Profil = ({ professor, logout }) => {
       villeDesiree: selectedVilleDesiree.join(';'),
     };
 
-    fetch('https://troubled-red-garb.cyclic.app/professeurs', {
+    fetch('https://tiny-worm-nightgown.cyclic.app/professeurs', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -124,7 +124,7 @@ const Profil = ({ professor, logout }) => {
   };
 
   const deleteAccount = () => {
-    fetch(`https://troubled-red-garb.cyclic.app/professeurs/${professor.email}`, {
+    fetch(`https://tiny-worm-nightgown.cyclic.app/professeurs/${professor.email}`, {
       method: 'DELETE',
     })
       .then((response) => response.json())

@@ -10,7 +10,7 @@ const Connexion = ({ onLogin }) => {
   const handleLogin = () => {
     const lowercaseEmail = email.toLowerCase(); // Convert email to lowercase
 
-    fetch('https://troubled-red-garb.cyclic.app/login', {
+    fetch('https://tiny-worm-nightgown.cyclic.app/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const Connexion = ({ onLogin }) => {
         setToken(token); // Set the token
 
         // Fetch all professors
-        return fetch('https://troubled-red-garb.cyclic.app/professeurs');
+        return fetch('https://tiny-worm-nightgown.cyclic.app/professeurs');
       })
       .then((response) => {
         if (response.ok) {

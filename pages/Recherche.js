@@ -18,7 +18,7 @@ const Recherche = () => {
   }, []);
 
   const fetchOptions = () => {
-    fetch('https://troubled-red-garb.cyclic.app/professeurs')
+    fetch('https://tiny-worm-nightgown.cyclic.app/professeurs')
       .then((response) => response.json())
       .then((data) => {
         setSpecialiteOptions(extractUniqueSpecialites(data));
@@ -31,7 +31,7 @@ const Recherche = () => {
   };
 
   const fetchProfessors = () => {
-    fetch('https://troubled-red-garb.cyclic.app/professeurs')
+    fetch('https://tiny-worm-nightgown.cyclic.app/professeurs')
       .then((response) => response.json())
       .then((data) => {
         setProfessors(data);
